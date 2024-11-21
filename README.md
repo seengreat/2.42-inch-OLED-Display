@@ -11,8 +11,7 @@ This product is a 2.42inch display expansion module, compatible with Raspberry P
 ## 1.1 Product parameters
 |Pixels	|128 x 64|
 |-----------|---------|
-|Display Color|	Black and White/Black and Yellow/
-Black and Blue/Black and Green|
+|Display Color|	Black and White/Black and Yellow/Black and Blue/Black and Green|
 |Voltage Translator	|TXS0108EPWR|
 |Signal interface	|SPI / I2C|
 |Supply voltage	|3.3V/5V|
@@ -20,8 +19,7 @@ Black and Blue/Black and Green|
 |Driver chip	|SSD1309|
 |Dimensions	|Style A:63mm(Length) x 42.4mm(width)
 Style B:62.1mm(Length) x 39.2mm(width)|
-|Weight	|Style A:23g
-Style B:21g|<br>
+|Weight	|Style A:23g Style B:21g|<br>
 
 ![image](https://github.com/seengreat/2.42-inch-OLED-Display/blob/main/03.png)<br> 
 
@@ -166,7 +164,7 @@ Table 2-3 is the wiring definition between Arduino Uno and OLED display:<br>
 |RST	|D8|<br>
 
 ### 2.3.2 Demo Codes Usage
-Open the \***\Arduino_MEGA_2.42\Arduino_MEGA_2.42.ino or \***<br>\Arduino_UNO_2.42\Arduino_UNO_2.42.ino with Arduino IDE Click Verify to verify the project file, and then transfer it to the module to observe the OLED display.<br>
+Open the ```\***\Arduino_MEGA_2.42\Arduino_MEGA_2.42.ino``` or ```\***\Arduino_UNO_2.42\Arduino_UNO_2.42.ino``` with Arduino IDE Click Verify to verify the project file, and then transfer it to the module to observe the OLED display.<br>
 ## 2.4 STM32 Demo Codes Usage
 The STM32 module used in this example program is STM32F103C8T6.<br>
 ### 2.4.1 Hardware interface configuration description
