@@ -17,9 +17,8 @@ This product is a 2.42inch display expansion module, compatible with Raspberry P
 |Supply voltage	|3.3V/5V|
 |OLED display area	|55.01mm (W) x 27.49mm (H)|
 |Driver chip	|SSD1309|
-|Dimensions	|Style A:63mm(Length) x 42.4mm(width)
-Style B:62.1mm(Length) x 39.2mm(width)|
-|Weight	|Style A:23g Style B:21g|<br>
+|Dimensions	|Style A:63mm(Length) x 42.4mm(width) Style B:62.1mm(Length) x 39.2mm(width)|
+|Weight	                |Style A:23g Style B:21g|<br>
 
 ![image](https://github.com/seengreat/2.42-inch-OLED-Display/blob/main/03.png)<br> 
 
