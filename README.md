@@ -193,7 +193,7 @@ The ESP32 module used in this example program is ESP32-WROOM-32E.<br>
 |RST	|IO33|<br>
 
 ### 2.5.2 Demo Codes Usage
-Open the demo codes in directory \***\Arduino_ESP32_2.42 with Arduino IDE Click Verify to verify the project file, and then transfer it to the module to observe the OLED display.<br>
+Open the demo codes in directory \Arduino_ESP32\Arduino_ESP32.ino  with Arduino IDE Click Verify to verify the project file, and then transfer it to the module to observe the OLED display.<br>
 ## 2.6 Image Creation and Modeling Instructions
 ### 2.6.1 Image Creation
 Create the images you want to display as pure black and white images with a resolution of 128 x 64. Save them as BMP or JPG files (BMP format is recommended).<br>
