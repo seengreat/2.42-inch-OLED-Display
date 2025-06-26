@@ -112,7 +112,7 @@ The following will be printed: "/dev/spidev0.0" and "/dev/spidev0.1"<br>
 ### 2.2.5 Open I2C interface
 ```sudo raspi-config```<br>
 Enable I2C interface:<br>
-Interfacing Options->SPI->Yes<br>
+Interfacing Options->I2C->Yes<br>
 Run the command to check whether I2C is started:<br>
 ```lsmod```<br>
 If i2c_bcm2835 are displayed, it means I2C module is started.<br>
@@ -129,13 +129,13 @@ The demo codes uses the python 3 environment. To run the python demo codes, you 
 ```sudo apt-get install spidev```<br>
 ```sudo pip3 install smbus```<br>
 ### 2.2.7 C version demo codes
-Open \***\raspberry_pi\c directory<br>
+Open \raspberry_pi\lgpio\c directory<br>
 ```sudo make clean```<br>
 ```sudo make```<br>
 ```sudo ./main```<br>
 After entering the above command, you can observe the OLED display.<br>
 ### 2.2.8 Python version demo codes
-Open \***\raspberry_pi\python directory<br>
+Open \raspberry_pi\lgpio\python directory<br>
 ```python3 gui_demo.py```<br>
 After entering the above command, you can observe the OLED display.<br>
 ## 2.3 Arduino Demo Codes Usage
@@ -163,7 +163,7 @@ Table 2-3 is the wiring definition between Arduino Uno and OLED display:<br>
 |RST	|D8|<br>
 
 ### 2.3.2 Demo Codes Usage
-Open the ```\***\Arduino_MEGA_2.42\Arduino_MEGA_2.42.ino``` or ```\***\Arduino_UNO_2.42\Arduino_UNO_2.42.ino``` with Arduino IDE Click Verify to verify the project file, and then transfer it to the module to observe the OLED display.<br>
+Open the \Arduino\Arduino.ino with Arduino IDE Click Verify to verify the project file, and then transfer it to the module to observe the OLED display.<br>
 ## 2.4 STM32 Demo Codes Usage
 The STM32 module used in this example program is STM32F103C8T6.<br>
 ### 2.4.1 Hardware interface configuration description
@@ -173,12 +173,12 @@ The STM32 module used in this example program is STM32F103C8T6.<br>
 |GND	|GND|
 |DIN	|SPI / I2C:PA7|
 |CLK	|SPI / I2C:PA5|
-|CS	|PB4|
+|CS	|PA4|
 |D/C	|PA3|
 |RST	|PA2|<br>
 
 ### 2.4.2 Demo Codes Usage
-Open the demo codes in directory \***\STM32 with Keil uVision5 software, compile it correctly, download it to the module, and observe the OLED display.<br>
+Open the demo codes in directory \STM32\USER\OLED.uvprojx with Keil uVision5 software, compile it correctly, download it to the module, and observe the OLED display.<br>
 ## 2.5 ESP32 Demo Codes Usage
 The ESP32 module used in this example program is ESP32-WROOM-32E.<br>
 ### 2.5.1 Hardware interface configuration description
