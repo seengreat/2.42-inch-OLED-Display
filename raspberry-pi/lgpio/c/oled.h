@@ -29,7 +29,7 @@ void Oled_Write_data(unsigned char data);
 void Oled_Init(void); //oled initialization
 void Oled_Clear(void);
 //Display 
-void Oled_Display(unsigned char *Image); 
+void Oled_Display(const unsigned char *Image); 
 
 #endif
 /***********************************************************
