@@ -111,7 +111,7 @@ void Oled_Clear(void)
     }
 }
 
-void Oled_Display(unsigned char *Image)
+void Oled_Display(const unsigned char *Image)
 {
     unsigned char temp,height,i,j;
     height = OLED_HEIGHT;
