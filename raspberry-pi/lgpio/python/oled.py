@@ -17,7 +17,6 @@ use_mode = 1 # 1:use spi;0:use i2c
 
 class OLED():
     def __init__(self):
-        self.cs = DigitalOutputDevice( PIN_CS,active_high = True,initial_value =False)#
         self.dc = DigitalOutputDevice( PIN_DC,active_high = True,initial_value =False)#
         self.rst = DigitalOutputDevice( PIN_RST,active_high = True,initial_value =False)#
         if use_mode == 1:
@@ -32,7 +31,8 @@ class OLED():
 #             self.cs.off()
         else:
             # i2c init
-            self.cs.off()
+            #self.cs = DigitalOutputDevice( PIN_CS,active_high = True,initial_value =False)#
+            #self.cs.off()
             self.dc.off()
             self.addr = 0x3c #dc.off:addr = 0x3C,dc.on:addr = 0x3D
             self.i2c = smbus.SMBus(1)  # /dev/i2c-1
@@ -115,5 +115,6 @@ class OLED():
     def clean_gpio(self):
         self.dc.close()
         self.rst.close()
-        self.cs.close()
+        #self.cs.close()
         print("close")
+
