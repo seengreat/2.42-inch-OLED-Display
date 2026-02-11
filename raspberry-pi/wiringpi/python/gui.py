@@ -206,8 +206,12 @@ class GUI():
             dx += 1
 
     def draw_str(self, x, y, text_str, color, font_size, font):
+        bbox = font.getbbox(text_str)
+        str_w = bbox[2]-bbox[0]
+        str_h = bbox[3]-bbox[1]
+        str_size =(str_w,str_h)
         str_list = list(font.getmask(text=text_str, mode="1"))
-        str_size = font.getsize(text=text_str)
+
         font_act_h = int(len(str_list)/(str_size[0]))
         font_h = font_size
         top_add_row = int((font_h-font_act_h)/2)
